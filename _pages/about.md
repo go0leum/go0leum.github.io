@@ -2,7 +2,11 @@
 layout: about
 title: about
 permalink: /
+<<<<<<< HEAD
 subtitle: Machine Learning Engineer, Data Engineer
+=======
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+>>>>>>> 0d1da1222660f9f7f0b026d9b50c424d9a74cbda
 
 profile:
   align: right
