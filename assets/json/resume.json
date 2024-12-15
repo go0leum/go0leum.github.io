@@ -27,6 +27,7 @@
       "institution": "Jeonnam Science High School",
       "location": "Naju-si, Jeollanam-do, Republic of Korea",
       "url": "https://jeonnam-sh.hs.jne.kr/chonnam-sh_hs/main.do?sysId=chonnam-sh_hs",
+      "studyType": "High School",
       "startDate": "2017.03",
       "endDate": "2020.20"
     },
@@ -35,7 +36,7 @@
       "location": "Seoul, Republic of Korea",
       "url": "https://www.konkuk.ac.kr/konkuk/index.do",
       "area": "Cvil & Environmental Engineering, Computer Engineering",
-      "studyType": "BE",
+      "studyType": "Bachelor's degree",
       "startDate": "2020.03",
       "endDate": "2025.08",
       "score": "GPA 4.04/4.5",
