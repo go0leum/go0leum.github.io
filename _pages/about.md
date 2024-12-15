@@ -8,7 +8,7 @@ subtitle: Machine Learning Engineer, Data Engineer
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: True # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p> mijin575@gmail.com</p>
 
