@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Machine Learning Engineer, Data Engineer
+subtitle: Machine Learning Engineer
 
 
 profile:
@@ -21,4 +21,4 @@ I am a student at Konkuk University, majoring in both Civil & Environmental Engi
 
 During my undergraduate years, I conducted research in a Smart City Lab and gained experience as a computer vision researcher at a startup. Currently, I am delving into machine learning research focused on Construction Management, geotechnical prediction. 
 
-My academic and professional interests lie in GIS, Construction data, and disaster safety data.
+My academic and professional interests lie in GIS, Construction data and disaster safety data.

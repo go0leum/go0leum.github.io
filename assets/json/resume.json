@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Goo Mijin",
+    "name": "Mijin Goo",
     "label": "AI Engineer & Researcher",
     "image": "",
     "email": "mijin575@gmail.com",
@@ -13,8 +13,17 @@
   },
   "work": [
     {
+      "name": "Konkuk Smart City Lab.",
+      "position": "Undergraduate Research Assistant",
+      "url": "https://app.rndcircle.io/lab/archive/36cac5ef-7f19-4978-8052-a214835804ae",
+      "startDate": "2021.01",
+      "endDate": "2023.05",
+      "summary": "Developed a fire detection model for parking lot safety management. Actively participated in all stages of the process, including data collection, data processing, AI model customization, AI model quantization, and deployment. Additionally, contributed to the development of a facial recognition system",
+      "highlights": ["Fire Dectection, Face Recognition"]
+    },
+    {
       "name": "LightVision Inc.",
-      "position": "Researcher",
+      "position": "AI Researcher",
       "url": "http://lightvision.ai/",
       "startDate": "2023.06",
       "endDate": "2024.06",
@@ -128,7 +137,8 @@
   ],
   "projects": [
     {
-      "name": "Automated Sports Commentary Generation(Gemmentary)",
+      "name": "Automated Sports Commentary Generation(Gemmantary)",
+      "url" : "https://github.com/fesua/Gemmantary.git",
       "summary": "Developed a program designed to generate sports commentary based on a short video clip and a single news update, enabling a full and comprehensive commentary experience.",
       "highlights": ["Gemma", "Video-LLaMA", "Multi-Modal", "LLM", "RAG", "NLP"],
       "startDate": "2024.07",
@@ -136,6 +146,7 @@
     },
     {
       "name": "Nearest Nearbors Adaptive Rockhead Depth Prediction",
+      "url" : "https://github.com/go0leum/rockhead_prediction.git",
       "summary": "Conducted a detailed study on methods for augmenting well data by considering the number of neighboring wells around each well. This project involved analyzing various data augmentation techniques to improve the accuracy and reliability of well data, taking into account the spatial distribution and proximity of neighboring wells.",
       "highlights": ["Spatial Interpolation", "Machine Learning", "borehole data"],
       "startDate": "2024.07",
@@ -143,6 +154,7 @@
     },
     {
       "name": "Construction Resource Management using Reinforcement Learning",
+      "url" : "https://github.com/go0leum/crm_rl_iot.git",
       "summary": "Efficient resource allocation is crucial in construction projects as it significantly impacts cost, duration, and quality. This project focused on the strategic allocation of various construction resources based on the specific needs, timing, location, and availability at each site.",
       "highlights": ["Construction Management", "Reinforcement Learning", "Simulation"],
       "startDate": "2024.09",
