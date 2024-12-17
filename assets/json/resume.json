@@ -5,7 +5,7 @@
     "image": "",
     "email": "mijin575@gmail.com",
     "url": "https://www.linkedin.com/in/mijin-goo-b52013309/",
-    "summary": "I am a student at Konkuk University, majoring in both Civil & Environmental Engineering and Computer Engineering. My academic and professional interests lie in GIS, Construction data, and disaster safety data.",
+    "summary": "I am a student at Konkuk University, majoring in both Civil & Environmental Engineering and Computer Engineering. My academic and professional interests lie in Construction data, and Production data.",
     "location": {
       "city": "Seoul",
       "countryCode": "Repulic of Korea"
@@ -126,11 +126,11 @@
       ]
     },
     {
-      "name": "Industrial Management",
+      "name": "Production Management",
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Process Management",
-        "Industrial Saftey",
+        "Worker Saftey",
         "IoT"
       ]
     }
