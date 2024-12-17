@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Machine Learning Engineer
+subtitle: Machine Learning Engineer & Researcher
 
 
 profile:
