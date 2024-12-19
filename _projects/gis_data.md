@@ -42,7 +42,7 @@ Designed hiking routes for Jirisan by considering the locations of shelters, KTX
         {% include figure.liquid loading="eager" path="assets/img/qgis_apple.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/qgis_hiking.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/qgis_hiking.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -52,9 +52,9 @@ Created a map to analyze the frequency of disasters such as floods and landslide
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/qgis_flood_bus.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/qgis_flood_bus.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/qgis_flood_taxi.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/qgis_flood_taxi.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
