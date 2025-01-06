@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GIS Data Visulization 
+title: GIS Data Visualization 
 description:
 img: assets/img/qgis_apple.png
 importance: 5
