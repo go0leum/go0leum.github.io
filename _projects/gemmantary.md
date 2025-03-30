@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Automated Sports Commentary Generation(Gemmentary)
+title: Gemmentary:Automated Sports Commentary Generation
 description:
 img: assets/img/Gemmantary.png
 importance: 4
@@ -8,7 +8,7 @@ category: project
 related_publications: false
 ---
 
-Developed a program designed to generate sports commentary based on a short video clip and a single news update, enabling a full and comprehensive commentary experience.
+We conducted a project that takes Olympic videos as input and generates commentary based on them.
 
 ## Pipeline
 
