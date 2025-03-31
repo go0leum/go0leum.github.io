@@ -5,8 +5,12 @@ description:
 img: assets/img/crm_rl_iot.png
 importance: 1
 category: project
-giscus_comments: true
+giscus_comments: false
 ---
+
+[github: Construction Resource Management using Reinforcement Learning](https://github.com/go0leum/crm_rl_iot.git)
+
+- Collaborator: Junseok Park [peterijr123](https://github.com/peterjr123)
 
 Efficient resource allocation in construction projects plays a critical role in influencing cost, duration, and quality. It is essential to allocate various construction resources based on the needs, timing, location, and availability at each site.
 

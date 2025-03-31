@@ -8,6 +8,10 @@ category: project
 related_publications: false
 ---
 
+[github: Gemmentary](https://github.com/fesua/Gemmantary)
+
+- Collaborator: [Joungho An](https://www.linkedin.com/in/joungho-an-07a865206/), [Junseo Choi](https://www.linkedin.com/in/wnstj0126/)
+
 We conducted a project that takes Olympic videos as input and generates commentary based on them.
 
 ## Pipeline
