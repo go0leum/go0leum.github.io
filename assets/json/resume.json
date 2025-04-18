@@ -68,7 +68,7 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "정보처리기사",
+      "name": "정보처리기사(Engineer Information Processing)",
       "date": "2024.06",
       "issuer": "한국산업인력공단(HRD Korea)",
       "icon": "fa-solid fa-clipboard-check"
@@ -76,7 +76,7 @@
     {
       "name": "SQLD",
       "date": "2024.07",
-      "issuer": "한국데이터산업진흥원",
+      "issuer": "한국데이터산업진흥원(Korea Data Agency)",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
