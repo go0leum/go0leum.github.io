@@ -13,7 +13,11 @@ thumbnail: assets/img/AuditMate_UI.png
 각 단계가 서로 유기적으로 연결되어 영향을 주고받는 과정을 직접 경험하며 많은 것을 배우고 있다.
 어떻게 해야 개발에 도움이 되는 UI 디자인이 될지, 어떻게 API 요청을 보내야 효율적인지 등 직접 고민하고 개발하고 있다.
 
-![UI](../assets/img/AuditMate_UI.png)
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/AuditMate_UI.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 <div class="caption">
     AuditMate UI 디자인
 </div>
