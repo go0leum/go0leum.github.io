@@ -15,7 +15,7 @@ thumbnail: assets/img/AuditMate_UI.png
 
 ![UI](../assets/img/AuditMate_UI.png)
 <div class="caption">
-    AuditMate UI
+    AuditMate UI 디자인
 </div>
 
 이번에 선배에게 개발한 내용을 공유하면서, 요구사항을 분석할 때 어떤 방식이 좋은 분석인지에 대해 고민하게 되었다.
@@ -24,7 +24,7 @@ thumbnail: assets/img/AuditMate_UI.png
 
 <iframe width="560" height="315" src="https://youtu.be/embed/oICY6NiGGWA" frameborder="0" allowfullscreen></iframe>
 <div class="caption">
-    AuditMate 구현 상황
+    AuditMate 개발 점검 영상
 </div>
 
 
