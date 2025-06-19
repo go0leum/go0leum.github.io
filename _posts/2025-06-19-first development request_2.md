@@ -22,7 +22,7 @@ thumbnail: assets/img/AuditMate_UI.png
 
 처음으로 90% 이상 개발된 결과물을 보여드리며 부족한 점에 대한 피드백을 받았는데, 너무 부가적인 기능들을 많이 넣었다는 것을 깨달았다.
 
-<iframe width="560" height="315" src="https://youtu.be/embed/oICY6NiGGWA" frameborder="0" allowfullscreen></iframe>
+[![AuditMate 개발 점검 영상](http://img.youtube.com/vi/oICY6NiGGWA/0.jpg)](https://youtu.be/oICY6NiGGWA)
 <div class="caption">
     AuditMate 개발 점검 영상
 </div>
