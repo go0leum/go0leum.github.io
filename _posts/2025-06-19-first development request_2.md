@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 첫 개발 의뢰
+title: AuditMate 중간 피드백
 date: 2025-06-19 21:01:00
 description: 회계사 선배에게 개발 의뢰를 받았다
 tags: requirement_analysis
