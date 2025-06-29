@@ -3,7 +3,7 @@ layout: page
 title: Vigilant-Construction Worker Safety Monitoring System
 description: 
 img: assets/img/vigilant.png
-importance: 1
+importance: 6
 category: project
 giscus_comments: false
 ---
@@ -36,10 +36,10 @@ Vigilant aims to build a smart, data-driven safety management system that can:
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vigilant_accident.PNG" title="vigilant_accident detection description" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/vigilant_accident.png" title="vigilant_accident detection description" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vigilant_fire.PNG" title="vigilant_fire detection description" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/vigilant_fire.png" title="vigilant_fire detection description" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
@@ -56,7 +56,7 @@ Vigilant aims to build a smart, data-driven safety management system that can:
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vigilant_hardware.png" title="vigilant hardware design description" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/vigilant_hardware.jpg" title="vigilant hardware design description" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
@@ -71,10 +71,10 @@ Vigilant aims to build a smart, data-driven safety management system that can:
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vigilant_web_map.PNG" title="vigilant_web map description" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/vigilant_web_map.png" title="vigilant_web map description" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vigilant_web_dashboard.PNG" title="vigilant_web dashboard detection description" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/vigilant_web_dashboard.png" title="vigilant_web dashboard detection description" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
