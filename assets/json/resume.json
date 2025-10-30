@@ -5,13 +5,22 @@
     "image": "",
     "email": "mijin575@gmail.com",
     "url": "https://www.linkedin.com/in/mijin-goo-b52013309/",
-    "summary": "I am a student at Konkuk University, majoring in both Civil & Environmental Engineering and Computer Engineering. My academic and professional interests lie in Construction data, and Production data.",
+    "summary": "I am a research assistant at Seoul National University Construction Engineering & Management Lab, majoring in both Civil & Environmental Engineering and Computer Engineering. My academic and professional interests lie in Construction data, and Production data.",
     "location": {
       "city": "Seoul",
       "countryCode": "Repulic of Korea"
     }
   },
   "work": [
+    {
+      "name": "Seoul National University Construction Engineering & Management Lab (SNUCEM)",
+      "position": "Research Assistant",
+      "url": "http://cem.snu.ac.kr/",
+      "startDate": "2025.01",
+      "endDate": "Present",
+      "summary": "Currently working as a research assistant at Seoul National University's Construction Engineering & Management Laboratory.",
+      "highlights": ["Construction Technology", "Web Development"]
+    },
     {
       "name": "Konkuk Smart City Lab.",
       "position": "Undergraduate Research Assistant",
