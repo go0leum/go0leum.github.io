@@ -5,7 +5,7 @@ date: 2025-07-29 21:01:00
 description: 회계사 선배에게 개발 의뢰를 받았다
 tags: requirement_analysis
 categories: experience project
-thumbnail: assets/img/AuditMate_UI.png
+thumbnail: assets/img/archi_glance_diagram.png
 ---
 
 2025년 1월부터 서울대 건축공학과 건설기술연구실에서 인턴을 시작했다.
@@ -48,9 +48,9 @@ Clova OCR과 Google OCR의 성능을 비교하여 좀 더 나은 Google OCR을 �
 따라서 표준화 및 정제, 유사도 기반 매핑 알고리즘을 개발했고 성능이 눈에 띄게 향상되었다.
 
 
-[![AuditMate 개발 점검 영상](http://img.youtube.com/vi/qP_cIFxxxYQ/0.jpg)](https://youtu.be/qP_cIFxxxYQ)
+[![ArchiGlance 개발 점검 영상](http://img.youtube.com/vi/oICY6NiGGWA/0.jpg)](https://youtu.be/oICY6NiGGWA)
 <div class="caption">
-    AuditMate 개발 점검 영상
+    ArchiGlance 개발 점검 영상
 </div>
 
 
