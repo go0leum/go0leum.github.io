@@ -48,7 +48,7 @@ Clova OCR과 Google OCR의 성능을 비교하여 좀 더 나은 Google OCR을 �
 따라서 표준화 및 정제, 유사도 기반 매핑 알고리즘을 개발했고 성능이 눈에 띄게 향상되었다.
 
 
-[![ArchiGlance 개발 점검 영상](http://img.youtube.com/vi/oICY6NiGGWA/0.jpg)](https://youtu.be/oICY6NiGGWA)
+[![ArchiGlance 개발 점검 영상](http://img.youtube.com/vi/qP_cIFxxxYQ/0.jpg)](https://youtu.be/qP_cIFxxxYQ)
 <div class="caption">
     ArchiGlance 개발 점검 영상
 </div>
