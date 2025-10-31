@@ -2,7 +2,7 @@
 layout: post
 title: ArchiGlance 건축도면 가독성 높여주는 프로그램
 date: 2025-07-29 21:01:00
-description: 회계사 선배에게 개발 의뢰를 받았다
+description: 연구실에서 첫 임무
 tags: requirement_analysis, web_development, computer_vision
 categories: experience project
 thumbnail: assets/img/archi_glance_diagram.png
