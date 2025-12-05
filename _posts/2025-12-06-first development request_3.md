@@ -40,7 +40,10 @@ thumbnail: assets/img/AuditMate_UI.png
 
 **[AuditMate-Lite 튜토리얼 영상]**
 
-[](https://www.google.com/search?q=%5Bhttps://youtu.be/W8GGaPYeKFU%5D\(https://youtu.be/W8GGaPYeKFU\))
+[![AuditMate-Lite 튜토리얼 영상](http://img.youtube.com/vi/oICY6NiGGWA/0.jpg)](https://youtu.be/W8GGaPYeKFU)
+<div class="caption">
+    AuditMate-Lite 튜토리얼 영상
+</div>
 
 ### 4\. 마치며
 
