@@ -5,7 +5,7 @@ date: 2025-12-06 21:01:00
 description: 회계사 선배에게 개발 의뢰를 받았다
 tags: requirement_analysis, Google Cloud System, Django, Java_Script
 categories: experience project
-thumbnail: assets/img/AuditMate_UI.png
+thumbnail: assets/img/AuditMate-Lite.png
 ---
 
 ## [Project] AuditMate-Lite: Google Cloud 배포부터 튜토리얼 제작까지의 여정
@@ -27,7 +27,7 @@ thumbnail: assets/img/AuditMate_UI.png
 
 우여곡절 끝에 안정적인 배포에 성공했습니다. 이제 별도의 설치 과정 없이 웹 브라우저를 통해 AuditMate-Lite의 기능을 체험해보실 수 있습니다.
 
-👉 **[AuditMate-Lite 서비스 바로가기](https://auditmate-793615282246.asia-northeast3.run.app/)**
+**[AuditMate-Lite 서비스 바로가기](https://auditmate-793615282246.asia-northeast3.run.app/)**
 
 ### 3\. 사용자 경험(UX)을 위한 튜토리얼 제작
 
