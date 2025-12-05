@@ -3,7 +3,7 @@ layout: post
 title: AuditMate-Lite 버전 배포
 date: 2025-12-06 21:01:00
 description: 회계사 선배에게 개발 의뢰를 받았다
-tags: requirement_analysis, Google Cloud System, Django, Java Script
+tags: requirement_analysis, Google Cloud System, Django, Java_Script
 categories: experience project
 thumbnail: assets/img/AuditMate_UI.png
 ---
