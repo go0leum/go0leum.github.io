@@ -177,7 +177,7 @@
       "summary": "Conducted a detailed study on methods for augmenting well data by considering the number of neighboring wells around each well. This project involved analyzing various data augmentation techniques to improve the accuracy and reliability of well data, taking into account the spatial distribution and proximity of neighboring wells.",
       "highlights": ["Spatial Interpolation", "Machine Learning", "borehole data"],
       "startDate": "2024.07",
-      "endDate": "~"
+      "endDate": "2025.12"
     },
     {
       "name": "Construction Resource Management using Reinforcement Learning",
