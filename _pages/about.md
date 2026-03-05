@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am currently working as an Assistant Researcher at Seoul National University.
+I am currently a Master's student at Seoul National University.
 
 During my undergraduate studies at Konkuk University, I double-majored in Civil & Environmental Engineering and Computer Engineering, gained research experience in a smart city lab, and worked as a Computer Vision Researcher at an AI startup.
 

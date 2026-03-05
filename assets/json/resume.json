@@ -5,7 +5,7 @@
     "image": "",
     "email": "mijin575@gmail.com",
     "url": "https://www.linkedin.com/in/mijin-goo-b52013309/",
-    "summary": "I am a research assistant at Seoul National University Construction Engineering & Management Lab, majoring in both Civil & Environmental Engineering and Computer Engineering. My academic and professional interests lie in Construction data, and Production data.",
+    "summary": "I am currently a Master's student at Seoul National University, Construction Engineering & Management Lab. My academic and professional interests lie in Construction data, and Production data.",
     "location": {
       "city": "Seoul",
       "countryCode": "Repulic of Korea"
@@ -17,7 +17,7 @@
       "position": "Research Assistant",
       "url": "https://cem.snu.ac.kr/",
       "startDate": "2025.01",
-      "endDate": "Present",
+      "endDate": "2026.02",
       "summary": "Currently working as a research assistant at Seoul National University's Construction Engineering & Management Laboratory.",
       "highlights": ["Construction Technology", "Web Development"]
     },
@@ -58,6 +58,16 @@
       "startDate": "2020.03",
       "endDate": "2025.08",
       "score": "GPA 4.1/4.5(Cvil & Environmental Engineering GPA 4.23/4.5, Computer Engineering GPA 3.85/4.5)",
+      "courses": ["GIS, Machine Learning, Python"]
+    },
+    {
+      "institution": "Seoul National University, Republic of Korea",
+      "location": "Seoul, Republic of Korea",
+      "url": "https://www.snu.ac.kr/",
+      "area": "Construction Engineering & Management",
+      "studyType": "Master's degree",
+      "startDate": "2026.03",
+      "endDate": "Present",
       "courses": ["GIS, Machine Learning, Python"]
     }
   ],
