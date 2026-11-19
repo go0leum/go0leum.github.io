@@ -131,6 +131,16 @@
       return node;
     };
     const dateRange = (item) => [item.startDate, item.endDate].filter(Boolean).join(" to ") || item.date || item.year || "";
+    const publicationRank = (item) => {
+      if (item.date) {
+        const timestamp = Date.parse(item.date);
+        if (!Number.isNaN(timestamp)) return timestamp;
+      }
+      const months = { January: 0, February: 1, March: 2, April: 3, May: 4, June: 5, July: 6, August: 7, September: 8, October: 9, November: 10, December: 11 };
+      const year = Number.parseInt(item.year, 10) || 0;
+      const month = months[item.month] ?? -1;
+      return Date.UTC(year, month, 1);
+    };
     const addTags = (parent, values) => {
       if (!Array.isArray(values) || !values.length) return;
       const tags = make("div", "cv-tags");
@@ -308,12 +318,13 @@
       addHighlights(data);
       addSection("Education", data.education, educationEntry, "education");
       addSection("Experience", data.work, (item) => entry(item.position, item.name, dateRange(item), item.summary, item.highlights, item.url), "experience");
-      addSection("Publications", data.publications, (item) => {
+      const publications = Array.isArray(data.publications) ? [...data.publications].sort((a, b) => publicationRank(b) - publicationRank(a)) : [];
+      addSection("Publications", publications, (item) => {
         const publicationDate = item.date || [item.month, item.year].filter(Boolean).join(" ");
         const subtitle = [item.journal, item.volume && `Vol. ${item.volume}`, item.issue && `No. ${item.issue}`, publicationDate, item.pages && `pp. ${item.pages}`, item.location].filter(Boolean).join(" | ");
         const box = entry(item.name, subtitle, "", Array.isArray(item.authors) ? "" : item.publisher, []);
         if (Array.isArray(item.authors) && item.authors.length) {
-          const authors = make("p", "cv-entry-summary cv-publication-authors", item.authors.map((author) => `${author.name} (${author.affiliation})`).join(" · "));
+          const authors = make("p", "cv-entry-summary cv-publication-authors", item.authors.map((author) => typeof author === "string" ? author : author.name).join(" · "));
           box.append(authors);
         }
         if (item.doi) box.append(link(item.doi, item.doi));

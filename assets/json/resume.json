@@ -162,12 +162,7 @@
   "publications": [
     {
       "name": "Application of automated machine learning and clustering algorithm for data-driven site characterization: Predicting the soil-rock interface",
-      "authors": [
-        { "name": "Dongwoo Lim", "affiliation": "Konkuk University" },
-        { "name": "Mijin Goo", "affiliation": "Konkuk University" },
-        { "name": "Han-Saem Kim", "affiliation": "Dongguk University" },
-        { "name": "Taeseo Ku", "affiliation": "Konkuk University" }
-      ],
+      "authors": ["Dongwoo Lim", "Mijin Goo", "Han-Saem Kim", "Taeseo Ku"],
       "journal": "Geomechanics and Engineering",
       "volume": "42",
       "pages": "12",
@@ -177,12 +172,7 @@
     },
     {
       "name": "VLM-based Agentic-RAG System for Decision Support in Architectural Drawing Review",
-      "authors": [
-        { "name": "Mijin Goo", "affiliation": "Seoul National University" },
-        { "name": "Gilsoo Jeong", "affiliation": "Gachon University" },
-        { "name": "Moonseo Park", "affiliation": "Seoul National University" },
-        { "name": "Changbum Ahn", "affiliation": "Seoul National University" }
-      ],
+      "authors": ["Mijin Goo", "Gilsoo Jeong", "Moonseo Park", "Changbum Ahn"],
       "journal": "\uB300\uD55C\uAC74\uCD95\uD559\uD68C \uD559\uC220\uBC1C\uD45C\uB300\uD68C \uB17C\uBB38\uC9D1",
       "volume": "46",
       "issue": "1",
@@ -192,9 +182,10 @@
     },
     {
       "name": "Borehole Data-Driven Site Characterization Using Dimensionality Reduction and Clustering",
-      "publisher": "Lim, Dongwoo et al.",
+      "authors": ["Dongwoo Lim", "Mijin Goo", "Han-Saem Kim", "Taeseo Ku"],
       "journal": "\uB300\uD55C\uD1A0\uBAA9\uD559\uD68C \uD559\uC220\uB300\uD68C",
       "year": "2025",
+      "month": "November",
       "pages": "310-311"
     }
   ]
