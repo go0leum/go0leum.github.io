@@ -8,7 +8,7 @@
     "summary": "I am currently a Master's student at Seoul National University, Construction Engineering & Management Lab. My academic and professional interests lie in Construction data, and Production data.",
     "location": {
       "city": "Seoul",
-      "countryCode": "Repulic of Korea"
+      "countryCode": "Republic of Korea"
     },
     "social": [
       {
@@ -75,7 +75,7 @@
       "institution": "Konkuk University",
       "location": "Seoul, Republic of Korea",
       "url": "https://www.konkuk.ac.kr/konkuk/index.do",
-      "area": ["Cvil & Environmental Engineering", "Computer Engineering"],
+      "area": ["Civil & Environmental Engineering", "Computer Engineering"],
       "studyType": "Bachelor's degree",
       "startDate": "2020.03",
       "endDate": "2025.08",
@@ -101,15 +101,15 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "?뺣낫泥섎━湲곗궗(Engineer Information Processing)",
+      "name": "\uC815\uBCF4\uCC98\uB9AC\uAE30\uC0AC (Engineer Information Processing)",
       "date": "2024.06",
-      "issuer": "?쒓뎅?곗뾽?몃젰怨듬떒(HRD Korea)",
+      "issuer": "\uD55C\uAD6D\uC0B0\uC5C5\uC778\uB825\uACF5\uB2E8 (HRD Korea)",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "SQLD",
       "date": "2024.07",
-      "issuer": "?쒓뎅?곗씠?곗궛?낆쭊?μ썝(Korea Data Agency)",
+      "issuer": "\uD55C\uAD6D\uB370\uC774\uD130\uC0B0\uC5C5\uC9C4\uD765\uC6D0 (Korea Data Agency)",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
