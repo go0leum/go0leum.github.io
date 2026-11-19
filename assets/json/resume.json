@@ -156,7 +156,8 @@
       "summary": "The goal of this project is to develop a visual-language reasoning AI technology specialized in architectural drawings in order to innovate the design document review process for multi-family housing, which is currently performed by human resources, into an AI-based automated review method. Through this project, we aim to significantly improve the efficiency and productivity of design document review tasks, while also enhancing the objectivity and reliability of review results through consistent application of review standards.",
       "highlights": ["Automated Design Review", "Architectural Drawing Understanding", "Vision-Language Model", "Building Code Compliance Checking", "Structured Knowledge Extraction"],
       "startDate": "2026.04",
-      "endDate": "2028.12"
+      "endDate": "2028.12",
+      "institution": "Korea Agency for Infrastructure Technology Advancement (KAIA)"
     },
     {
       "name": "Edge Keyframe Extraction-Driven VLM Testbed for Real-Time Construction Site Safety Monitoring",
