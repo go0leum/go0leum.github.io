@@ -1,15 +1,37 @@
 {
   "basics": {
     "name": "Mijin Goo",
-    "label": "Machine Learning Engineer & Researcher",
-    "image": "",
+    "label": "Researcher",
+    "image": "/assets/img/prof_pic.jpg",
     "email": "mijin575@gmail.com",
     "url": "https://www.linkedin.com/in/mijin-goo-b52013309/",
     "summary": "I am currently a Master's student at Seoul National University, Construction Engineering & Management Lab. My academic and professional interests lie in Construction data, and Production data.",
     "location": {
       "city": "Seoul",
       "countryCode": "Repulic of Korea"
-    }
+    },
+    "social": [
+      {
+        "network": "LinkedIn",
+        "username": "mijin-goo-b52013309",
+        "url": "https://www.linkedin.com/in/mijin-goo-b52013309/"
+      },
+      {
+        "network": "GitHub",
+        "username": "go0leum",
+        "url": "https://github.com/go0leum"
+      },
+      {
+        "network": "orcid",
+        "username": "0009-0006-0873-0587",
+        "url": "https://orcid.org/0009-0006-0873-0587"
+      },
+      {
+        "network": "google-scholar",
+        "username": "Mijin Goo",
+        "url": "https://scholar.google.com/citations?user=XNxf7ekAAAAJ&hl=ko"
+      }
+    ]
   },
   "work": [
     {
@@ -50,25 +72,24 @@
       "endDate": "2020.20"
     },
     {
-      "institution": "University of Konkuk, Seoul, Republic of Korea",
+      "institution": "Konkuk University",
       "location": "Seoul, Republic of Korea",
       "url": "https://www.konkuk.ac.kr/konkuk/index.do",
-      "area": "Cvil & Environmental Engineering, Computer Engineering",
+      "area": ["Cvil & Environmental Engineering", "Computer Engineering"],
       "studyType": "Bachelor's degree",
       "startDate": "2020.03",
       "endDate": "2025.08",
-      "score": "GPA 4.1/4.5(Cvil & Environmental Engineering GPA 4.23/4.5, Computer Engineering GPA 3.85/4.5)",
-      "courses": ["GIS, Machine Learning, Python"]
+      "score": "GPA 4.1/4.5"
     },
     {
       "institution": "Seoul National University, Republic of Korea",
       "location": "Seoul, Republic of Korea",
       "url": "https://www.snu.ac.kr/",
-      "area": "Construction Engineering & Management",
+      "area": ["Construction Engineering & Management", "Applied Data Science"],
+      "advisor" : "Prof. Changbum Ryan Ahn",
       "studyType": "Master's degree",
       "startDate": "2026.03",
-      "endDate": "Present",
-      "courses": ["GIS, Machine Learning, Python"]
+      "endDate": "2028.02"
     }
   ],
   "certificates": [
@@ -80,22 +101,15 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Google Machine Learning Bootcamp",
-      "date": "2024.08",
-      "issuer": "Google Developers Group",
-      "url": "https://rsvp.withgoogle.com/events/google-machine-learning-bootcamp-kr-2024/home",
-      "icon": "fa-solid fa-clipboard-check"
-    },
-    {
-      "name": "정보처리기사(Engineer Information Processing)",
+      "name": "?뺣낫泥섎━湲곗궗(Engineer Information Processing)",
       "date": "2024.06",
-      "issuer": "한국산업인력공단(HRD Korea)",
+      "issuer": "?쒓뎅?곗뾽?몃젰怨듬떒(HRD Korea)",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "SQLD",
       "date": "2024.07",
-      "issuer": "한국데이터산업진흥원(Korea Data Agency)",
+      "issuer": "?쒓뎅?곗씠?곗궛?낆쭊?μ썝(Korea Data Agency)",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
@@ -118,20 +132,8 @@
       "keywords": [
         "ArcGIS",
         "QGIS",
-        "Data Visiualization"
+        "Data Visualization"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Korean",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Intermidiate",
-      "icon": ""
     }
   ],
   "interests": [
@@ -139,60 +141,30 @@
       "name": "Construction Management",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Process Management",
-        "Construction Saftey",
-        "IoT"
-      ]
-    },
-    {
-      "name": "Production Management",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Process Management",
-        "Worker Saftey",
-        "IoT"
+        "Drawing Review",
+        "Construction Safety"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Autonomous Fire Detection System",
-      "url" : "https://github.com/fesua/Gemmantary.git",
-      "summary": "Implemented fire detection within images using the Inception V3 model, and utilized Class Activation Maps (CAM) to pinpoint the exact location of fires in the images.",
-      "highlights": ["CNN", "Classfication Activation Map", "Fire Detection", "Computer Vision"],
-      "startDate": "2023.06",
-      "endDate": "2024.06"
-    },
+      "name": "Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing",
+      "summary": "The goal of this project is to develop a visual-language reasoning AI technology specialized in architectural drawings in order to innovate the design document review process for multi-family housing, which is currently performed by human resources, into an AI-based automated review method. Through this project, we aim to significantly improve the efficiency and productivity of design document review tasks, while also enhancing the objectivity and reliability of review results through consistent application of review standards.",
+      "highlights": ["Automated Design Review", "Architectural Drawing Understanding", "Vision-Language Model", "Building Code Compliance Checking", "Structured Knowledge Extraction"],
+      "startDate": "2026.04",
+      "endDate": "2028.12"
+    }
+  ],
+  "publications": [
     {
-      "name": "Automated Sports Commentary Generation:Gemmantary",
-      "url" : "https://github.com/fesua/Gemmantary.git",
-      "summary": "Developed a program designed to generate sports commentary based on a short video clip and a single news update, enabling a full and comprehensive commentary experience.",
-      "highlights": ["Gemma", "Video-LLaMA", "Multi-Modal", "LLM", "RAG", "NLP"],
-      "startDate": "2024.07",
-      "endDate": "2024.10"
-    },
-    {
-      "name": "Nearest Nearbors Adaptive Rockhead Depth Prediction",
-      "url" : "https://github.com/go0leum/rockhead_prediction.git",
-      "summary": "Conducted a detailed study on methods for augmenting well data by considering the number of neighboring wells around each well. This project involved analyzing various data augmentation techniques to improve the accuracy and reliability of well data, taking into account the spatial distribution and proximity of neighboring wells.",
-      "highlights": ["Spatial Interpolation", "Machine Learning", "borehole data"],
-      "startDate": "2024.07",
-      "endDate": "2025.12"
-    },
-    {
-      "name": "Construction Resource Management using Reinforcement Learning",
-      "url" : "https://github.com/go0leum/crm_rl_iot.git",
-      "summary": "Efficient resource allocation is crucial in construction projects as it significantly impacts cost, duration, and quality. This project focused on the strategic allocation of various construction resources based on the specific needs, timing, location, and availability at each site.",
-      "highlights": ["Construction Management", "Reinforcement Learning", "Simulation"],
-      "startDate": "2024.09",
-      "endDate": "2024.12"
-    },
-    {
-      "name": "Worker Injury Detection and Alert System in Construction Sites:vigilant",
-      "summary": "The focus of this research is to develop a system for detecting and alerting physical injuries of workers caused by construction accidents. Utilize wearable devices to collect data such as GPS, heart rate, accelerometer, and step count to monitor workers' entry into hazardous areas and detect real-time physical injuries and abnormal conditions. Additionally, develop a system that integrates worker data with AI-powered CCTV analysis to provide accident information to managers for prompt response.",
-      "highlights": ["Construction Safety", "IoT", "GIS", "Fire Detection"],
-      "startDate": "2024.09",
-      "endDate": "2025.06"
+      "name": "Application of automated machine learning and clustering algorithm for data-driven site characterization: Predicting the soil-rock interface",
+      "publisher": "Dongwoo Lim, Mijin Goo, Han-Saem Kim, Taeseo Ku",
+      "journal": "Geomechanics and Engineering",
+      "volume": "42",
+      "pages": "12",
+      "year": "2025",
+      "month": "September",
+      "doi": "https://doi.org/10.12989/gae.2025.42.5.321"
     }
   ]
 }
