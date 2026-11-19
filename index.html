@@ -35,7 +35,7 @@
   }
   .simple-cv *, .simple-cv *::before, .simple-cv *::after { box-sizing: border-box; }
   .simple-cv h1, .simple-cv h2, .simple-cv h3, .simple-cv p { color: var(--cv-ink); }
-  .simple-cv a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .simple-cv a { color: inherit; overflow-wrap: anywhere; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .simple-cv a:hover { color: var(--cv-muted); }
   .cv-loading, .cv-error { color: var(--cv-muted) !important; }
   .cv-header { padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--cv-rule); }
@@ -71,6 +71,7 @@
   .cv-entry-date { flex: 0 0 auto; color: var(--cv-muted); font-size: .82rem; white-space: nowrap; }
   .cv-entry-subtitle { margin: .12rem 0 0; color: var(--cv-muted) !important; font-size: .9rem; }
   .cv-entry-summary { margin: .45rem 0 0; font-size: .94rem; line-height: 1.7; }
+  .cv-publication-authors { color: var(--cv-muted) !important; font-size: .84rem; }
   .cv-education-details { display: grid; gap: .35rem; margin: .65rem 0 0; }
   .cv-education-detail { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: .75rem; margin: 0; font-size: .92rem; }
   .cv-education-detail dt { color: var(--cv-muted); font-weight: 600; }
@@ -268,7 +269,26 @@
       const bio = make("div", "cv-bio");
       bio.append(make("h1", "cv-name", basics.name || "Resume"));
       if (basics.label) bio.append(make("p", "cv-label", basics.label));
-      if (basics.summary) bio.append(make("p", "cv-summary", basics.summary));
+      if (basics.summary) {
+        const summary = make("p", "cv-summary");
+        const inlineLinks = [basics.lab, basics.advisor].filter((item) => item && item.name && item.url);
+        let remaining = basics.summary;
+        while (remaining) {
+          const matches = inlineLinks
+            .map((item) => ({ item, index: remaining.indexOf(item.name) }))
+            .filter((match) => match.index >= 0)
+            .sort((a, b) => a.index - b.index);
+          if (!matches.length) {
+            summary.append(document.createTextNode(remaining));
+            break;
+          }
+          const { item, index } = matches[0];
+          if (index > 0) summary.append(document.createTextNode(remaining.slice(0, index)));
+          summary.append(link(item.name, item.url));
+          remaining = remaining.slice(index + item.name.length);
+        }
+        bio.append(summary);
+      }
       const contact = make("div", "cv-contact");
       if (basics.email) contact.append(link(basics.email, `mailto:${basics.email}`));
       if (basics.location) contact.append(make("span", "", [basics.location.city, basics.location.countryCode].filter(Boolean).join(", ")));
@@ -289,9 +309,14 @@
       addSection("Education", data.education, educationEntry, "education");
       addSection("Experience", data.work, (item) => entry(item.position, item.name, dateRange(item), item.summary, item.highlights, item.url), "experience");
       addSection("Publications", data.publications, (item) => {
-        const subtitle = [item.journal, item.volume && `Vol. ${item.volume}`, item.pages && `pp. ${item.pages}`, item.year].filter(Boolean).join(" | ");
-        const box = entry(item.name, subtitle, "", item.publisher, []);
-        if (item.doi) box.append(link("DOI", item.doi));
+        const publicationDate = item.date || [item.month, item.year].filter(Boolean).join(" ");
+        const subtitle = [item.journal, item.volume && `Vol. ${item.volume}`, item.issue && `No. ${item.issue}`, publicationDate, item.pages && `pp. ${item.pages}`, item.location].filter(Boolean).join(" | ");
+        const box = entry(item.name, subtitle, "", Array.isArray(item.authors) ? "" : item.publisher, []);
+        if (Array.isArray(item.authors) && item.authors.length) {
+          const authors = make("p", "cv-entry-summary cv-publication-authors", item.authors.map((author) => `${author.name} (${author.affiliation})`).join(" · "));
+          box.append(authors);
+        }
+        if (item.doi) box.append(link(item.doi, item.doi));
         return box;
       }, "publications");
       if (Array.isArray(data.projects) && data.projects.length) {
