@@ -342,6 +342,7 @@
           const date = dateRange(item);
           if (date) top.append(make("time", "cv-entry-date", date));
           card.append(top);
+          if (item.institution) card.append(make("p", "cv-entry-summary", item.institution));
           if (item.summary) card.append(make("p", "cv-entry-summary", item.summary));
           addTags(card, item.highlights);
           grid.append(card);

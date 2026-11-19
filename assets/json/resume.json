@@ -157,6 +157,14 @@
       "highlights": ["Automated Design Review", "Architectural Drawing Understanding", "Vision-Language Model", "Building Code Compliance Checking", "Structured Knowledge Extraction"],
       "startDate": "2026.04",
       "endDate": "2028.12"
+    },
+    {
+      "name": "Edge Keyframe Extraction-Driven VLM Testbed for Real-Time Construction Site Safety Monitoring",
+      "summary": "This project aims to build a real-time construction safety monitoring testbed that operates Vision-Language Models (VLMs) efficiently under resource-constrained edge computing environments. To address high false-alarm rates in deep learning models and computational latency in VLMs, we develop an edge-based keyframe extraction algorithm that selectively identifies risk-relevant frames based on activity energy. The selected keyframes are processed by a VLM agent for step-by-step hazard reasoning, with system latency and detection performance quantitatively validated at actual construction sites.",
+      "highlights": ["Construction Safety", "Edge System", "Vision-Language Model"],
+      "startDate": "2026.05.11.",
+      "endDate": "2026.08.11.",
+      "institution": "Seoul National University RISE Program"
     }
   ],
   "publications": [
