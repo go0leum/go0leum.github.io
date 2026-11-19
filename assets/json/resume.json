@@ -4,7 +4,15 @@
     "label": "Researcher",
     "image": "/assets/img/prof_pic.jpg",
     "email": "mijin575@gmail.com",
-    "summary": "I am a master's student in Construction Engineering at Seoul National University and a member of the SNU Construction Engineering & Management Lab (SNUCEM). My research interests focus on data-driven construction management, particularly the use of artificial intelligence in architectural drawing review and construction safety.\n\nMy experience spans computer vision, GIS, and construction data, including work on fire detection systems, spatial data analysis, automated architectural drawing review, and soil–rock interface prediction. I aim to develop practical AI applications that support safer, more efficient, and better-informed construction processes.",
+    "summary": "I am a master's student in Construction Engineering at Seoul National University and a member of the SNU Construction Engineering & Management Lab (SNUCEM), under the supervision of Prof. Changbum Ryan Ahn. My research interests focus on data-driven construction management, particularly the use of artificial intelligence in architectural drawing review and construction safety.\n\nMy experience spans computer vision, GIS, and construction data, including work on fire detection systems, spatial data analysis, automated architectural drawing review, and soil–rock interface prediction. I aim to develop practical AI applications that support safer, more efficient, and better-informed construction processes.",
+    "advisor": {
+      "name": "Prof. Changbum Ryan Ahn",
+      "url": "https://scholar.google.com/citations?hl=ko&user=PJfny7sAAAAJ"
+    },
+    "lab": {
+      "name": "SNU Construction Engineering & Management Lab (SNUCEM)",
+      "url": "https://cem.snu.ac.kr/"
+    },
     "location": {
       "city": "Seoul",
       "countryCode": "Republic of Korea"
@@ -43,13 +51,13 @@
       "highlights": ["Construction Technology", "Web Development"]
     },
     {
-      "name": "Konkuk Smart City Lab.",
+      "name": "Konkuk University Smart City Lab.",
       "position": "Undergraduate Research Assistant",
       "url": "https://app.rndcircle.io/lab/archive/36cac5ef-7f19-4978-8052-a214835804ae",
       "startDate": "2021.01",
       "endDate": "2023.05",
       "summary": "Conducted a data analysis and visualization project utilizing various GIS data. Participated in the Ministry of the Interior and Safety's disaster safety management dashboard project, organizing equipment required for disaster response and investigation.",
-      "highlights": ["GIS, Disatster Data"]
+      "highlights": ["GIS", "Disatster Data"]
     },
     {
       "name": "LightVision Inc.",
@@ -58,7 +66,7 @@
       "startDate": "2023.06",
       "endDate": "2024.06",
       "summary": "Developed a fire detection model for parking lot safety management. Actively participated in all stages of the process, including data collection, data processing, AI model customization, AI model quantization, and deployment. Additionally, contributed to the development of a facial recognition system",
-      "highlights": ["Fire Dectection, Face Recognition"]
+      "highlights": ["Fire Dectection", "Face Recognition"]
     }
   ],
   "education": [
@@ -115,7 +123,6 @@
   "skills": [
     {
       "name": "AI Engineering",
-      "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Vision-Langunage Model",
@@ -125,7 +132,6 @@
     },
     {
       "name": "GIS",
-      "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "ArcGIS",
@@ -156,13 +162,40 @@
   "publications": [
     {
       "name": "Application of automated machine learning and clustering algorithm for data-driven site characterization: Predicting the soil-rock interface",
-      "publisher": "Dongwoo Lim, Mijin Goo, Han-Saem Kim, Taeseo Ku",
+      "authors": [
+        { "name": "Dongwoo Lim", "affiliation": "Konkuk University" },
+        { "name": "Mijin Goo", "affiliation": "Konkuk University" },
+        { "name": "Han-Saem Kim", "affiliation": "Dongguk University" },
+        { "name": "Taeseo Ku", "affiliation": "Konkuk University" }
+      ],
       "journal": "Geomechanics and Engineering",
       "volume": "42",
       "pages": "12",
       "year": "2025",
       "month": "September",
       "doi": "https://doi.org/10.12989/gae.2025.42.5.321"
+    },
+    {
+      "name": "VLM-based Agentic-RAG System for Decision Support in Architectural Drawing Review",
+      "authors": [
+        { "name": "Mijin Goo", "affiliation": "Seoul National University" },
+        { "name": "Gilsoo Jeong", "affiliation": "Gachon University" },
+        { "name": "Moonseo Park", "affiliation": "Seoul National University" },
+        { "name": "Changbum Ahn", "affiliation": "Seoul National University" }
+      ],
+      "journal": "\uB300\uD55C\uAC74\uCD95\uD559\uD68C \uD559\uC220\uBC1C\uD45C\uB300\uD68C \uB17C\uBB38\uC9D1",
+      "volume": "46",
+      "issue": "1",
+      "year": "2026",
+      "month": "April",
+      "pages": "765-768"
+    },
+    {
+      "name": "Borehole Data-Driven Site Characterization Using Dimensionality Reduction and Clustering",
+      "publisher": "Lim, Dongwoo et al.",
+      "journal": "\uB300\uD55C\uD1A0\uBAA9\uD559\uD68C \uD559\uC220\uB300\uD68C",
+      "year": "2025",
+      "pages": "310-311"
     }
   ]
 }
