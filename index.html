@@ -13,14 +13,14 @@
 </main>
 
 <style>
-  :root { color-scheme: light; }
+  :root { color-scheme: light; scroll-behavior: smooth; }
   body { margin: 0; background: #fff; color: #171717; }
   .simple-cv {
     --cv-ink: #171717;
     --cv-muted: #626262;
     --cv-rule: #dedede;
     box-sizing: border-box;
-    max-width: 828px;
+    max-width: 900px;
     margin: 0 auto 5rem;
     padding: 0 24px;
     color: var(--cv-ink);
@@ -43,10 +43,23 @@
   .cv-summary { max-width: 680px; margin: 1rem 0 0; }
   .cv-contact { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin-top: 1rem; color: var(--cv-muted); font-size: .92rem; }
   .cv-social { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin-top: 1rem; font-size: .92rem; }
-  .cv-section { padding: 1.8rem 0; border-bottom: 1px solid var(--cv-rule); }
+  .cv-nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    gap: .5rem;
+    overflow-x: auto;
+    padding: .8rem 0;
+    background: rgba(255, 255, 255, .97);
+    border-bottom: 1px solid var(--cv-rule);
+    scrollbar-width: none;
+  }
+  .cv-nav::-webkit-scrollbar { display: none; }
+  .cv-nav a { flex: 0 0 auto; padding: .25rem .7rem; border: 1px solid var(--cv-rule); border-radius: 999px; color: var(--cv-muted); font-size: .82rem; text-decoration: none; }
+  .cv-nav a:hover, .cv-nav a:focus-visible { color: var(--cv-ink); border-color: var(--cv-ink); }
+  .cv-section { padding: 1.8rem 0; border-bottom: 1px solid var(--cv-rule); scroll-margin-top: 4.25rem; }
   .cv-section-title { margin: 0 0 1.2rem; font-size: .82rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-  .cv-subsection + .cv-subsection { margin-top: 1.25rem; }
-  .cv-subsection-title { margin: 0 0 .75rem; color: var(--cv-muted) !important; font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .cv-entry + .cv-entry { margin-top: 1.5rem; }
   .cv-entry-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
   .cv-entry-title { margin: 0; font-size: 1.05rem; font-weight: 650; }
@@ -57,10 +70,24 @@
   .cv-education-detail { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: .75rem; margin: 0; font-size: .92rem; }
   .cv-education-detail dt { color: var(--cv-muted); font-weight: 600; }
   .cv-education-detail dd { margin: 0; }
-  .cv-tags { display: flex; flex-wrap: wrap; gap: .35rem .8rem; margin: .55rem 0 0; color: var(--cv-muted); font-size: .88rem; }
-  .cv-tags span + span::before { content: "|"; margin-right: .8rem; }
+  .cv-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: .65rem 0 0; color: var(--cv-muted); font-size: .84rem; }
+  .cv-tags span { padding: .16rem .55rem; border: 1px solid var(--cv-rule); border-radius: 999px; }
+  .cv-highlights { display: grid; gap: 1.25rem; }
+  .cv-tag-groups { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .cv-tag-group { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+  .cv-tag-name { padding: .2rem .65rem; border: 1px solid #bdbdbd; border-radius: 999px; font-size: .88rem; font-weight: 650; }
+  .cv-tag-detail { color: var(--cv-muted); font-size: .84rem; }
+  .cv-level { color: var(--cv-muted); font-size: .78rem; }
+  .cv-certificates { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .7rem; }
+  .cv-certificate { min-width: 0; padding: .8rem .9rem; border: 1px solid var(--cv-rule); border-radius: 4px; }
+  .cv-certificate-name { margin: 0; font-size: .94rem; font-weight: 650; }
+  .cv-certificate-meta { display: flex; justify-content: space-between; gap: .7rem; margin: .2rem 0 0; color: var(--cv-muted) !important; font-size: .82rem; }
+  .cv-project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .cv-project-card { min-width: 0; padding: 1.1rem; border: 1px solid var(--cv-rule); border-radius: 4px; cursor: default; }
+  .cv-project-card .cv-entry-summary { margin-bottom: 0; }
+  @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
   @media (max-width: 600px) {
-    .simple-cv { margin-bottom: 3rem; font-size: .96rem; }
+    .simple-cv { margin-bottom: 3rem; padding: 0 18px; font-size: .96rem; }
     .cv-header { padding-top: 1rem; }
     .cv-intro { align-items: flex-start; gap: 1rem; }
     .cv-photo { flex-basis: 88px; width: 88px; height: 88px; }
@@ -94,24 +121,61 @@
       values.forEach((value) => tags.append(make("span", "", value)));
       parent.append(tags);
     };
-    const addSection = (title, entries, renderEntry) => {
+    const addSection = (title, entries, renderEntry, id) => {
       if (!Array.isArray(entries) || !entries.length) return;
       const section = make("section", "cv-section");
+      section.id = id;
       section.append(make("h2", "cv-section-title", title));
       entries.forEach((item) => section.append(renderEntry(item)));
       root.append(section);
     };
-    const addGroupedSection = (title, groups) => {
-      const visibleGroups = groups.filter((group) => Array.isArray(group.items) && group.items.length);
-      if (!visibleGroups.length) return;
-      const section = make("section", "cv-section");
-      section.append(make("h2", "cv-section-title", title));
-      visibleGroups.forEach((group) => {
-        const subsection = make("div", "cv-subsection");
-        subsection.append(make("h3", "cv-subsection-title", group.title));
-        group.items.forEach((item) => subsection.append(group.renderEntry(item)));
-        section.append(subsection);
+    const addNavigation = (data) => {
+      const links = [
+        ["Focus", "highlights", (data.interests || []).length || (data.skills || []).length || (data.certificates || []).length],
+        ["Education", "education", (data.education || []).length],
+        ["Experience", "experience", (data.work || []).length],
+        ["Publications", "publications", (data.publications || []).length],
+        ["Projects", "projects", (data.projects || []).length]
+      ].filter(([, , hasItems]) => hasItems);
+      if (!links.length) return;
+      const nav = make("nav", "cv-nav");
+      nav.setAttribute("aria-label", "Jump to CV section");
+      links.forEach(([label, id]) => {
+        const anchor = make("a", "", label);
+        anchor.href = `#${id}`;
+        nav.append(anchor);
       });
+      root.append(nav);
+    };
+    const addHighlights = (data) => {
+      const interests = Array.isArray(data.interests) ? data.interests : [];
+      const skills = Array.isArray(data.skills) ? data.skills : [];
+      const certificates = Array.isArray(data.certificates) ? data.certificates : [];
+      if (!interests.length && !skills.length && !certificates.length) return;
+      const section = make("section", "cv-section cv-highlights");
+      section.id = "highlights";
+      const tagGroups = make("div", "cv-tag-groups");
+      [...interests, ...skills].forEach((item) => {
+        const group = make("div", "cv-tag-group");
+        group.append(make("span", "cv-tag-name", item.name || ""));
+        if (item.level) group.append(make("span", "cv-level", item.level));
+        (item.keywords || []).forEach((keyword) => group.append(make("span", "cv-tag-detail", keyword)));
+        tagGroups.append(group);
+      });
+      if (tagGroups.childNodes.length) section.append(tagGroups);
+      if (certificates.length) {
+        const cards = make("div", "cv-certificates");
+        certificates.forEach((item) => {
+          const card = make("article", "cv-certificate");
+          card.append(make("h3", "cv-certificate-name", item.name || ""));
+          const meta = make("p", "cv-certificate-meta");
+          if (item.issuer) meta.append(make("span", "", item.issuer));
+          if (item.date) meta.append(make("time", "", item.date));
+          if (meta.childNodes.length) card.append(meta);
+          cards.append(card);
+        });
+        section.append(cards);
+      }
       root.append(section);
     };
     const entry = (title, subtitle, date, summary, tags, href) => {
@@ -174,21 +238,36 @@
         header.append(social);
       }
       root.replaceChildren(header);
+      addNavigation(data);
 
-      addGroupedSection("Interests, Skills & Certificates", [
-        { title: "Interests", items: data.interests, renderEntry: (item) => entry(item.name, "", "", "", item.keywords) },
-        { title: "Skills", items: data.skills, renderEntry: (item) => entry(item.name, item.level, "", "", item.keywords) },
-        { title: "Certificates", items: data.certificates, renderEntry: (item) => entry(item.name, item.issuer, item.date, "", [], item.url) }
-      ]);
-      addSection("Education", data.education, educationEntry);
-      addSection("Experience", data.work, (item) => entry(item.position, item.name, dateRange(item), item.summary, item.highlights, item.url));
+      addHighlights(data);
+      addSection("Education", data.education, educationEntry, "education");
+      addSection("Experience", data.work, (item) => entry(item.position, item.name, dateRange(item), item.summary, item.highlights, item.url), "experience");
       addSection("Publications", data.publications, (item) => {
         const subtitle = [item.journal, item.volume && `Vol. ${item.volume}`, item.pages && `pp. ${item.pages}`, item.year].filter(Boolean).join(" | ");
         const box = entry(item.name, subtitle, "", item.publisher, []);
         if (item.doi) box.append(link("DOI", item.doi));
         return box;
-      });
-      addSection("Projects", data.projects, (item) => entry(item.name, "", dateRange(item), item.summary, item.highlights, item.url));
+      }, "publications");
+      if (Array.isArray(data.projects) && data.projects.length) {
+        const section = make("section", "cv-section");
+        section.id = "projects";
+        section.append(make("h2", "cv-section-title", "Projects"));
+        const grid = make("div", "cv-project-grid");
+        data.projects.forEach((item) => {
+          const card = make("article", "cv-project-card");
+          const top = make("div", "cv-entry-top");
+          top.append(make("h3", "cv-entry-title", item.name || ""));
+          const date = dateRange(item);
+          if (date) top.append(make("time", "cv-entry-date", date));
+          card.append(top);
+          if (item.summary) card.append(make("p", "cv-entry-summary", item.summary));
+          addTags(card, item.highlights);
+          grid.append(card);
+        });
+        section.append(grid);
+        root.append(section);
+      }
     };
 
     fetch(root.dataset.resumeUrl)
