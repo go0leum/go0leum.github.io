@@ -7,6 +7,9 @@
   <title>Mijin Goo - CV</title>
   <link rel="icon" type="image/jpeg" href="/assets/img/prof_pic.jpg">
   <link rel="canonical" href="https://go0leum.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="simple-cv" id="simple-cv" data-resume-url="/assets/json/resume.json">
@@ -26,8 +29,8 @@
     padding: 0 24px;
     color: var(--cv-ink);
     background: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
-    font-size: 1rem;
+    font-family: "DM Sans", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
     line-height: 1.65;
   }
   .simple-cv *, .simple-cv *::before, .simple-cv *::after { box-sizing: border-box; }
@@ -35,68 +38,77 @@
   .simple-cv a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .simple-cv a:hover { color: var(--cv-muted); }
   .cv-loading, .cv-error { color: var(--cv-muted) !important; }
-  .cv-header { padding: 2.4rem 0 2rem; border-bottom: 1px solid var(--cv-rule); }
+  .cv-header { padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--cv-rule); }
   .cv-intro { display: flex; align-items: center; gap: 2rem; }
-  .cv-photo { flex: 0 0 176px; width: 176px; height: 230px; border: 1px solid var(--cv-rule); border-radius: 3px; object-fit: cover; object-position: center 38%; }
+  .cv-photo { flex: 0 0 196px; width: 196px; height: 250px; object-fit: cover; object-position: center 38%; }
   .cv-bio { min-width: 0; max-width: 620px; }
-  .cv-name { margin: 0; font-size: clamp(2rem, 4vw, 2.7rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.16; }
-  .cv-label { margin: .45rem 0 0; color: var(--cv-muted) !important; font-size: 1rem; }
-  .cv-summary { max-width: 580px; margin: .9rem 0 0; font-size: .97rem; line-height: 1.75; }
-  .cv-contact { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin-top: .9rem; color: var(--cv-muted); font-size: .9rem; }
-  .cv-social { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin-top: 1rem; font-size: .92rem; }
+  .cv-name { margin: 0; font-size: clamp(1.9rem, 3.4vw, 2.4rem); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
+  .cv-label { margin: .35rem 0 0; color: var(--cv-muted) !important; font-size: .96rem; }
+  .cv-summary { max-width: 580px; margin: .85rem 0 0; font-size: .98rem; line-height: 1.75; white-space: pre-line; }
+  .cv-contact { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin-top: .9rem; color: var(--cv-muted); font-size: .88rem; }
+  .cv-social { display: flex; flex-wrap: wrap; gap: .45rem 1.1rem; margin-top: 1.1rem; font-size: .88rem; }
   .cv-nav {
     position: sticky;
     top: 0;
     z-index: 5;
     display: flex;
-    gap: .5rem;
+    gap: 1.1rem;
     overflow-x: auto;
-    padding: .8rem 0;
-    background: rgba(255, 255, 255, .97);
+    padding: .7rem 0;
+    background: #fff;
     border-bottom: 1px solid var(--cv-rule);
     scrollbar-width: none;
   }
   .cv-nav::-webkit-scrollbar { display: none; }
-  .cv-nav a { flex: 0 0 auto; padding: .25rem .7rem; border: 1px solid var(--cv-rule); border-radius: 999px; color: var(--cv-muted); font-size: .82rem; text-decoration: none; }
+  .cv-nav a { flex: 0 0 auto; padding: .25rem 0; border-bottom: 1px solid transparent; color: var(--cv-muted); font-size: .85rem; text-decoration: none; }
   .cv-nav a:hover, .cv-nav a:focus-visible { color: var(--cv-ink); border-color: var(--cv-ink); }
-  .cv-section { padding: 1.8rem 0; border-bottom: 1px solid var(--cv-rule); scroll-margin-top: 4.25rem; }
-  .cv-section-title { margin: 0 0 1.2rem; font-size: .82rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-  .cv-entry + .cv-entry { margin-top: 1.5rem; }
+  .cv-section { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 2rem; align-items: start; padding: 1.8rem 0; border-bottom: 1px solid var(--cv-rule); scroll-margin-top: 4.25rem; }
+  .cv-section-title { margin: .1rem 0 0; font-size: 1rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+  .cv-section-body { min-width: 0; }
+  .cv-entry + .cv-entry { margin-top: 1.3rem; }
   .cv-entry-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-  .cv-entry-title { margin: 0; font-size: 1.05rem; font-weight: 650; }
-  .cv-entry-date { flex: 0 0 auto; color: var(--cv-muted); font-size: .88rem; }
-  .cv-entry-subtitle { margin: .15rem 0 0; color: var(--cv-muted) !important; font-size: .93rem; }
-  .cv-entry-summary { margin: .55rem 0 0; }
+  .cv-entry-title { margin: 0; font-size: .98rem; font-weight: 600; line-height: 1.5; }
+  .cv-entry-date { flex: 0 0 auto; color: var(--cv-muted); font-size: .82rem; white-space: nowrap; }
+  .cv-entry-subtitle { margin: .12rem 0 0; color: var(--cv-muted) !important; font-size: .9rem; }
+  .cv-entry-summary { margin: .45rem 0 0; font-size: .94rem; line-height: 1.7; }
   .cv-education-details { display: grid; gap: .35rem; margin: .65rem 0 0; }
   .cv-education-detail { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: .75rem; margin: 0; font-size: .92rem; }
   .cv-education-detail dt { color: var(--cv-muted); font-weight: 600; }
   .cv-education-detail dd { margin: 0; }
-  .cv-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: .65rem 0 0; color: var(--cv-muted); font-size: .84rem; }
-  .cv-tags span { padding: .16rem .55rem; border: 1px solid var(--cv-rule); border-radius: 999px; }
-  .cv-highlights { display: grid; gap: 1.25rem; }
-  .cv-tag-groups { display: flex; flex-wrap: wrap; gap: .5rem; }
-  .cv-tag-group { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
-  .cv-tag-name { padding: .2rem .65rem; border: 1px solid #bdbdbd; border-radius: 999px; font-size: .88rem; font-weight: 650; }
-  .cv-tag-detail { color: var(--cv-muted); font-size: .84rem; }
+  .cv-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: .55rem 0 0; color: var(--cv-muted); font-size: .82rem; }
+  .cv-tags span { padding: .13rem .45rem; background: #f5f5f5; border-radius: 2px; }
+  .cv-highlights .cv-section-body { display: grid; grid-column: 2; gap: 1.1rem; }
+  .cv-highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
+  .cv-highlight-label { margin: 0 0 .55rem; color: var(--cv-muted) !important; font-size: .76rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; }
+  .cv-interest-list, .cv-skill-list { display: grid; gap: .65rem; }
+  .cv-interest-item { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .6rem; }
+  .cv-interest-name, .cv-skill-name { font-size: .9rem; font-weight: 600; }
+  .cv-interest-detail { color: var(--cv-muted); font-size: .83rem; }
+  .cv-skill-item { padding-left: .7rem; border-left: 2px solid #dedede; }
+  .cv-skill-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .55rem; }
   .cv-level { color: var(--cv-muted); font-size: .78rem; }
-  .cv-certificates { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .7rem; }
-  .cv-certificate { min-width: 0; padding: .8rem .9rem; border: 1px solid var(--cv-rule); border-radius: 4px; }
-  .cv-certificate-name { margin: 0; font-size: .94rem; font-weight: 650; }
-  .cv-certificate-meta { display: flex; justify-content: space-between; gap: .7rem; margin: .2rem 0 0; color: var(--cv-muted) !important; font-size: .82rem; }
-  .cv-project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
-  .cv-project-card { min-width: 0; padding: 1.1rem; border: 1px solid var(--cv-rule); border-radius: 4px; cursor: default; }
+  .cv-certificates { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .6rem; }
+  .cv-certificate { min-width: 0; padding: .7rem .8rem; background: #f7f7f7; border-radius: 3px; }
+  .cv-certificate-name { margin: 0; font-size: .9rem; font-weight: 600; }
+  .cv-certificate-meta { display: flex; justify-content: space-between; gap: .7rem; margin: .2rem 0 0; color: var(--cv-muted) !important; font-size: .8rem; }
+  .cv-project-grid { display: grid; grid-template-columns: 1fr; gap: .7rem; }
+  .cv-project-card { min-width: 0; padding: .9rem 1rem; background: #f7f7f7; border-left: 2px solid #bdbdbd; cursor: default; }
   .cv-project-card .cv-entry-summary { margin-bottom: 0; }
   @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
   @media (max-width: 600px) {
     .simple-cv { margin-bottom: 3rem; padding: 0 18px; font-size: .96rem; }
-    .cv-header { padding-top: 1.5rem; }
-    .cv-intro { flex-direction: column; align-items: flex-start; gap: 1.1rem; }
-    .cv-photo { flex-basis: auto; width: 132px; height: 172px; }
-    .cv-name { font-size: clamp(1.8rem, 8vw, 2.25rem); }
-    .cv-summary { margin-top: .75rem; font-size: .94rem; }
+    .cv-header { padding-top: 1.4rem; }
+    .cv-intro { align-items: flex-start; gap: 1rem; }
+    .cv-photo { flex-basis: 122px; width: 122px; height: 160px; }
+    .cv-name { font-size: clamp(1.65rem, 7vw, 2rem); }
+    .cv-summary { margin-top: .65rem; font-size: .9rem; line-height: 1.65; }
     .cv-entry-top { display: block; }
     .cv-entry-date { display: block; margin-top: .1rem; }
     .cv-education-detail { grid-template-columns: 82px minmax(0, 1fr); }
+    .cv-section { grid-template-columns: 1fr; gap: .75rem; padding: 1.35rem 0; }
+    .cv-section-title { margin: 0; }
+    .cv-highlights .cv-section-body { grid-column: 1; }
+    .cv-nav { gap: .8rem; }
   }
 </style>
 
@@ -129,7 +141,9 @@
       const section = make("section", "cv-section");
       section.id = id;
       section.append(make("h2", "cv-section-title", title));
-      entries.forEach((item) => section.append(renderEntry(item)));
+      const body = make("div", "cv-section-body");
+      entries.forEach((item) => body.append(renderEntry(item)));
+      section.append(body);
       root.append(section);
     };
     const addNavigation = (data) => {
@@ -157,16 +171,42 @@
       if (!interests.length && !skills.length && !certificates.length) return;
       const section = make("section", "cv-section cv-highlights");
       section.id = "highlights";
-      const tagGroups = make("div", "cv-tag-groups");
-      [...interests, ...skills].forEach((item) => {
-        const group = make("div", "cv-tag-group");
-        group.append(make("span", "cv-tag-name", item.name || ""));
-        if (item.level) group.append(make("span", "cv-level", item.level));
-        (item.keywords || []).forEach((keyword) => group.append(make("span", "cv-tag-detail", keyword)));
-        tagGroups.append(group);
-      });
-      if (tagGroups.childNodes.length) section.append(tagGroups);
+      section.append(make("h2", "cv-section-title", "Focus & Credentials"));
+      const body = make("div", "cv-section-body");
+      const grid = make("div", "cv-highlights-grid");
+      if (interests.length) {
+        const group = make("div", "cv-highlight-group");
+        group.append(make("h3", "cv-highlight-label", "Interests"));
+        const list = make("div", "cv-interest-list");
+        interests.forEach((item) => {
+          const row = make("div", "cv-interest-item");
+          row.append(make("span", "cv-interest-name", item.name || ""));
+          (item.keywords || []).forEach((keyword) => row.append(make("span", "cv-interest-detail", keyword)));
+          list.append(row);
+        });
+        group.append(list);
+        grid.append(group);
+      }
+      if (skills.length) {
+        const group = make("div", "cv-highlight-group");
+        group.append(make("h3", "cv-highlight-label", "Skills"));
+        const list = make("div", "cv-skill-list");
+        skills.forEach((item) => {
+          const row = make("div", "cv-skill-item");
+          const top = make("div", "cv-skill-top");
+          top.append(make("span", "cv-skill-name", item.name || ""));
+          if (item.level) top.append(make("span", "cv-level", item.level));
+          row.append(top);
+          addTags(row, item.keywords);
+          list.append(row);
+        });
+        group.append(list);
+        grid.append(group);
+      }
+      if (grid.childNodes.length) body.append(grid);
       if (certificates.length) {
+        const group = make("div", "cv-highlight-group");
+        group.append(make("h3", "cv-highlight-label", "Certificates"));
         const cards = make("div", "cv-certificates");
         certificates.forEach((item) => {
           const card = make("article", "cv-certificate");
@@ -177,8 +217,10 @@
           if (meta.childNodes.length) card.append(meta);
           cards.append(card);
         });
-        section.append(cards);
+        group.append(cards);
+        body.append(group);
       }
+      section.append(body);
       root.append(section);
     };
     const entry = (title, subtitle, date, summary, tags, href) => {
@@ -268,7 +310,9 @@
           addTags(card, item.highlights);
           grid.append(card);
         });
-        section.append(grid);
+        const body = make("div", "cv-section-body");
+        body.append(grid);
+        section.append(body);
         root.append(section);
       }
     };

@@ -1,11 +1,10 @@
-{
+﻿{
   "basics": {
     "name": "Mijin Goo",
     "label": "Researcher",
     "image": "/assets/img/prof_pic.jpg",
     "email": "mijin575@gmail.com",
-    "url": "https://www.linkedin.com/in/mijin-goo-b52013309/",
-    "summary": "I am currently a Master's student at Seoul National University, Construction Engineering & Management Lab. My academic and professional interests lie in Construction data, and Production data.",
+    "summary": "I am a master's student in Construction Engineering at Seoul National University and a member of the SNU Construction Engineering & Management Lab (SNUCEM). My research interests focus on data-driven construction management, particularly the use of artificial intelligence in architectural drawing review and construction safety.\n\nMy experience spans computer vision, GIS, and construction data, including work on fire detection systems, spatial data analysis, automated architectural drawing review, and soil–rock interface prediction. I aim to develop practical AI applications that support safer, more efficient, and better-informed construction processes.",
     "location": {
       "city": "Seoul",
       "countryCode": "Republic of Korea"
@@ -40,7 +39,7 @@
       "url": "https://cem.snu.ac.kr/",
       "startDate": "2025.01",
       "endDate": "2026.02",
-      "summary": "Currently working as a research assistant at Seoul National University's Construction Engineering & Management Laboratory.",
+      "summary": "Assisted with SNUCEM research on VLM-based risk assessment and BIM-related applications.",
       "highlights": ["Construction Technology", "Web Development"]
     },
     {
@@ -82,7 +81,7 @@
       "score": "GPA 4.1/4.5"
     },
     {
-      "institution": "Seoul National University, Republic of Korea",
+      "institution": "Seoul National University",
       "location": "Seoul, Republic of Korea",
       "url": "https://www.snu.ac.kr/",
       "area": ["Construction Engineering & Management", "Applied Data Science"],
@@ -119,10 +118,9 @@
       "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Machine Learning",
+        "Vision-Langunage Model",
         "Computer Vision",
-        "Reinforcement Learning",
-        "Python"
+        "Reinforcement Learning"
       ]
     },
     {
