@@ -82,9 +82,7 @@
   .cv-highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
   .cv-highlight-label { margin: 0 0 .55rem; color: var(--cv-muted) !important; font-size: .76rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; }
   .cv-interest-list, .cv-skill-list { display: grid; gap: .65rem; }
-  .cv-interest-item { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .6rem; }
-  .cv-interest-name, .cv-skill-name { font-size: .9rem; font-weight: 600; }
-  .cv-interest-detail { color: var(--cv-muted); font-size: .83rem; }
+  .cv-skill-name { font-size: .9rem; font-weight: 600; }
   .cv-skill-item { padding-left: .7rem; border-left: 2px solid #dedede; }
   .cv-skill-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .55rem; }
   .cv-level { color: var(--cv-muted); font-size: .78rem; }
@@ -190,9 +188,11 @@
         group.append(make("h3", "cv-highlight-label", "Interests"));
         const list = make("div", "cv-interest-list");
         interests.forEach((item) => {
-          const row = make("div", "cv-interest-item");
-          row.append(make("span", "cv-interest-name", item.name || ""));
-          (item.keywords || []).forEach((keyword) => row.append(make("span", "cv-interest-detail", keyword)));
+          const row = make("div", "cv-skill-item");
+          const top = make("div", "cv-skill-top");
+          top.append(make("span", "cv-skill-name", item.name || ""));
+          row.append(top);
+          addTags(row, item.keywords);
           list.append(row);
         });
         group.append(list);
